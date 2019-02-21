@@ -1,11 +1,11 @@
 // Example that shows simple usage of the INIReader class
 
 #include <iostream>
-#include "INIReader.h"
+#include <inih/INIReader.h>
 
 int main()
 {
-    INIReader reader("../examples/test.ini");
+    INIReader reader("test.ini");
 
     if (reader.ParseError() < 0) {
         std::cout << "Can't load 'test.ini'\n";
